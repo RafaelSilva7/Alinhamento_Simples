@@ -1,0 +1,21 @@
+Entrada (tamanho[100]):
+1-  MGLQARRWASGSRGAAGPRRGVLQLLPLPLPLPLLLLLLLRPGAGRAAAQGEAEAPTLYLWKTGPWGRCMGDECGPGGIQTRAVWCAHVEGWTTLHTNC
+2-  MFINRWLFSTNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGDDQIYNVIVTAHAFVMIFFMVMPMMIGGFGNWLVPLMIGAPDMAFPRMNN
+
+
+Algoritmo: needleman-wunsch (alinhamento local)
+Match/Mismatch: global    Gap: -1
+Tempo execucao: 0.04584670066833496s
+Melhor Alinhamento:
+M---GLQARRW--AS------G------SRGA-AG--PRRG--VL--QL-LPLPLPLPLLLLLLLRPGA--GRAAAQ-GEAEAPTLYLWKTG-PWGRCMGD-----ECGPGGI-QT--RA-V-----WCAHV--------EG-W---TTL-------------HTNC
+|        ||   |      |        || ||     |   |   |                |  |  |    | |   |  | |   |        |           |  |   | |         |         | |     |               |     score: 31
+MFIN-----RWLF-STNHKDIGTLYLLF--GAWAGMV---GTA-LSI-LI---------------R--AELG----QPG---A--L-L---GD-------DQIYNV------IV-TAH-AFVMIFFM----VMPMMIGGF-GNWLVP--LMIGAPDMAFPRMN--N-
+
+
+Algoritmo: needleman-wunsch (alinhamento local)
+Match/Mismatch: global    Gap: -3
+Tempo execucao: 0.04537034034729004s
+Melhor Alinhamento:
+MGLQARRW-AS------G----SRGA-AGPRRG-VL-QLLPLPLPLPLLLLLLLRPGAGRAAAQ-----GEAEAPTLYLWKTGPWGRCM-GDECG----PGGIQTRAVWCAHVEGWTTLHTNC
+|     ||  |      |      || ||   |  |  |    |  |     ||    |    |       | |         |    | |   |    |  |   |   |          |     score: 29
+M--FINRWLFSTNHKDIGTLYLLFGAWAG-MVGTALSILIRAELGQP---GALL----G--DDQIYNVIVTAHAFVMIFFMVMP---MMIG-GFGNWLVPLMI--GAPDMA------FPRMNN

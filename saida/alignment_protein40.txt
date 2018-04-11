@@ -1,0 +1,21 @@
+Entrada (tamanho[40]):
+1-  MGLQARRWASGSRGAAGPRRGVLQLLPLPLPLPLLLLLLL
+2-  MFINRWLFSTNHKDIGTLYLLFGAWAGMVGTALSILIRAE
+
+
+Algoritmo: needleman-wunsch (alinhamento global)
+Match/Mismatch: global    Gap: -2
+Tempo execucao: 0.007791042327880859s
+Melhor Alinhamento:
+MGLQARRW-AS------G----SRGA-AGPRRGVLQLLPLPLPLPLLLLLLL
+|     ||  |      |      || ||    |         |   |        score: 12
+M--FINRWLFSTNHKDIGTLYLLFGAWAG---MV------GTAL-SILIRAE
+
+
+Algoritmo: Smith-Waterman (alinhamento local)
+Match/Mismatch: blosum62    Gap: -2
+Tempo execucao: 0.15797996520996094s
+Melhor Alinhamento:
+MGLQARRWASGSRGAAGPRR-GVLQLL--P-LPLPL-PLL-LLLLL-
+|     ||   |         | | ||            |  |        score: 10
+M-F-INRWLF-S---TNHKDIGTLYLLFGAWAGM-VGTALSILIRAE

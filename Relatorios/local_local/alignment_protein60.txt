@@ -1,0 +1,21 @@
+Entrada (tamanho[60]):
+1-  MGLQARRWASGSRGAAGPRRGVLQLLPLPLPLPLLLLLLLRPGAGRAAAQGEAEAPTLYL
+2-  MFINRWLFSTNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGDDQIYNVIVTA
+
+
+Algoritmo: needleman-wunsch (alinhamento global)
+Match/Mismatch: global    Gap: -1
+Tempo execucao: 0.017374753952026367s
+Melhor Alinhamento:
+MGLQARRWASGSRGAAGPRRGVLQLL------PLPLPL-PLLLLLLLRPGAGRAAAQGEAEAPTLYL
+|     ||   |        | | ||           |  |    |  |||     |      |       score: 16
+M--FINRW-LFS--TNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGDDQIYNVIVT--A
+
+
+Algoritmo: needleman-wunsch (alinhamento local)
+Match/Mismatch: global    Gap: -3
+Tempo execucao: 0.01724696159362793s
+Melhor Alinhamento:
+MGLQARRWASGSRGAAGPRRGVLQLLPLPLPLPLLLLLLLRPG-AGRAAAQGEAEAPTLYL
+|    |   |      |                |  |     |  |                   score: 8
+M-FINRWLFSTNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGDDQIYNVIVTA

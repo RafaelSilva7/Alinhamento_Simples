@@ -1,0 +1,21 @@
+Entrada (tamanho[50]):
+1-  MGLQARRWASGSRGAAGPRRGVLQLLPLPLPLPLLLLLLLRPGAGRAAAQ
+2-  MFINRWLFSTNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGD
+
+
+Algoritmo: needleman-wunsch (alinhamento local)
+Match/Mismatch: global    Gap: -1
+Tempo execucao: 0.011870622634887695s
+Melhor Alinhamento:
+M---GLQARRW--AS------G------SRGA-AG--PRRG--VL--QL----L--P--LPLPLPLLLLLLLRPG-AGRAAAQ
+|        ||   |      |        || ||     |   |   |    |  |             ||  |            score: 17
+MFIN-----RWLF-STNHKDIGTLYLLF--GAWAGMV---GTA-LSI-LIRAELGQPGA-----------LL--GD-------
+
+
+Algoritmo: needleman-wunsch (alinhamento local)
+Match/Mismatch: global    Gap: -3
+Tempo execucao: 0.011605501174926758s
+Melhor Alinhamento:
+MGLQARRW-AS------G----SRGA-AGPRRG-VL-QLLPLPLPLPLLLLLLLRPGAGRAAAQ
+|     ||  |      |      || ||   |  |  |    |  |     ||    |         score: 17
+M--FINRWLFSTNHKDIGTLYLLFGAWAG-MVGTALSILIRAELGQP---GALL----G----D

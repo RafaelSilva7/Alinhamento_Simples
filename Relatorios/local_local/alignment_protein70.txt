@@ -1,0 +1,21 @@
+Entrada (tamanho[70]):
+1-  MGLQARRWASGSRGAAGPRRGVLQLLPLPLPLPLLLLLLLRPGAGRAAAQGEAEAPTLYLWKTGPWGRCM
+2-  MFINRWLFSTNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGDDQIYNVIVTAHAFVMIFFMV
+
+
+Algoritmo: needleman-wunsch (alinhamento global)
+Match/Mismatch: global    Gap: -1
+Tempo execucao: 0.02340221405029297s
+Melhor Alinhamento:
+MGLQARRWASGSRGAAGPRRGVLQLL------PLPLPL-PLLLLLLLRPGAGRAAAQGEAEAPTLYLWKTGPWGRCM-
+|     ||   |        | | ||           |  |    |  |||     |      |            |     score: 17
+M--FINRW-LFS--TNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGDDQIYNVIVT---AHAFVMIFFMV
+
+
+Algoritmo: needleman-wunsch (alinhamento local)
+Match/Mismatch: global    Gap: -3
+Tempo execucao: 0.023212194442749023s
+Melhor Alinhamento:
+MGLQARRWASGSRGAAGPRRGVLQLLPLPLPLPLLLLLLLRPGAGRAAAQGEAEAPTLYLWKTGPWGRCM-
+|    |   |      |                |  |     |   |                      |     score: 9
+M-FINRWLFSTNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGDDQIYNVIVTAHAFVMIFFMV

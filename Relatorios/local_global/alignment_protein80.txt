@@ -1,0 +1,21 @@
+Entrada (tamanho[80]):
+1-  MGLQARRWASGSRGAAGPRRGVLQLLPLPLPLPLLLLLLLRPGAGRAAAQGEAEAPTLYLWKTGPWGRCMGDECGPGGI
+2-  MFINRWLFSTNHKDIGTLYLLFGAWAGMVGTALSILIRAELGQPGALLGDDQIYNVIVTAHAFVMIFFMVMPMMIGGFGN
+
+
+Algoritmo: needleman-wunsch (alinhamento global)
+Match/Mismatch: global    Gap: -2
+Tempo execucao: 0.029587984085083008s
+Melhor Alinhamento:
+MGLQARRW-AS------G----SRGA-AGPRRGVLQLLPLPLPLPLLLLLLLRPGA--GRAAAQ-GEAEAPTL-----Y-LWKT-----------GPWGRCM-GDECGPGGI
+|     ||  |      |      || ||    |             |  | |  |  |    | |   |  |     |    |            |    | |   |  |     score: 26
+M--FINRWLFSTNHKDIGTLYLLFGAWAG---MV----------GTALSILIR--AELG----QPG---A-LLGDDQIYNVIVTAHAFVMIFFMVMP---MMIG---G-FGN
+
+
+Algoritmo: Smith-Waterman (alinhamento local)
+Match/Mismatch: blosum62    Gap: -2
+Tempo execucao: 0.6075148582458496s
+Melhor Alinhamento:
+MGLQARRWASGSRGAAGPRR-GVLQLL--P-LPLPL-PLL-LLL-L-L-RPGA--G--RA--AAQGEAEA-PTLYLWKTGPWGRCMGDECGPG-GI
+|     ||   |         | | ||            |  |    |  |||  |           | |          |    |    | | |     score: 22
+M-F-INRWLF-S---TNHKDIGTLYLLFGAWAGM-VGTALSILIRAELGQPGALLGDDQIYNVIV-TAHAFVMIF-FMVMP---MM---IG-GFGN
